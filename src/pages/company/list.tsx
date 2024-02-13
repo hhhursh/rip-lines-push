@@ -56,6 +56,7 @@ export const CompanyList = () => {
               </FilterDropdown>
             )}
             render={(value,record)=>{
+              return(
               <Space>
                 <CustomAvatar 
                 shape="square"
@@ -63,11 +64,12 @@ export const CompanyList = () => {
                 src={record.avatarUrl}
                 />
                 <Text style={{whiteSpace: 'nowrap'}}>
-
+                {record.name}
                 </Text>
 
 
               </Space>
+              );
             }}
           />
           
