@@ -18,7 +18,7 @@ export {
     UpcomingEventsSkeleton,
     AccordionHeaderSkeleton,
     KanbanColumnSkeleton,
-    LatestActivitySkeleton,
+    LatestActivitiesSkeleton,
     ProjectCardSkeleton,
     LatestActivities,
 

@@ -15,7 +15,7 @@ import { BrowserRouter, Route, Routes, Outlet } from "react-router-dom";
 
 import {dataProvider, liveProvider} from "./providers";
 import {authProvider} from "./providers";
-import {Home, ForgotPassword, Login, Register} from "./pages";
+import {Home, ForgotPassword, Login, Register, CompanyList} from "./pages";
 import {Authenticated} from "@refinedev/core";
 import {CatchAllNavigate} from "@refinedev/react-router-v6";
 import {Layout} from "./components/layout";
@@ -67,6 +67,7 @@ function App() {
 
                   >
                    <Route index element={<Home />}/>
+                   <Route path='/companies' element={<CompanyList />}/>
                   </Route>
                 </Routes>
                 <RefineKbar />
